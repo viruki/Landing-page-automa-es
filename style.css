@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+   background-color: white;
+   
+}
+
+nav{
+     position: sticky;
+    padding: 10px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav ul a:hover{
+    background-color: rgb(69, 141, 223);
+    color: rgb(255, 255, 255);
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+
+.hero{
+    color: white;
+    min-height: 60svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 141, 223);
+    gap: 8px;
+}
+
+.hero-p{
+    opacity: .6;
+}
+
+.btn-hero{
+    padding: 9px 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: .4s transform;
+}
+
+.btn-hero:hover{
+    transform: scale(1.05);
+}
+
+.ferramentas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80svh;
+}
+
+.fr-lateral-column{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.fr-linha{
+    text-align: center;
+    display: flex;
+    gap: 50px;
+}
+
+.ferramenta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 15px 4px rgba(0,0,0,0.49);
+    max-width: 200px;
+    padding: 25px 15px;
+    text-align: center;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.ferramenta:hover{
+    transform: scale(1.06);
+}
+
+.about{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-height: 40svh;
+    min-width: 30svh;
+    background-color: rgb(69, 141, 223);
+}
+
+#img-equipe{
+   height: 100%;
+   border-radius: 6px;
+   transition: .3s;
+   cursor: pointer;
+}
+
+#img-equipe:hover{
+
+    transform: scale(1.05);
+
+}
+
+.text-equipe{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-equipe p{
+    max-width: 300px;
+}
+
+.planos{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100svh;
+}
+
+.plano{
+    max-width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 500px;
+    box-shadow: 1px 1px 15px 4px rgba(0,0,0,0.49);
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+
+.btn-buy-plan{
+    padding: 8px 12px;
+    background-color: rgb(69, 141, 223);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-buy-plan:hover{
+    opacity: .8;
+    padding: 10px 17px;
+}
+
+.contact{
+    background-color: rgb(69, 141, 223);
+    padding: 10px 6px;
+    color: white;
+    min-height: 40svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inp-name{
+    border-radius: 7px;
+    border: none;
+    padding: 5px 4px;
+}
+
+.inp-name:focus{
+    border: none;
+    outline: none;
+}
+
+.name, .msg{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    resize: none;
+    padding: 7px 5px;
+    min-height: 150px;
+    border: none;
+    border-radius: 7px;
+    min-width: 70px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.send{
+    padding: 8px 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    transform: scale(.9);
+    cursor: pointer;
+}
+
+footer{
+    background-color: #ccc;
+    text-align: center;
+    padding: 3px 10px;
+}
+
+@media (max-width: 1000px){
+
+    .hero-title{
+        text-align: center;
+    }
+
+  .fr-lateral-column{
+    display: flex;
+    flex-direction: column;
+  }  
+
+  .fr-linha{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ferramenta{
+    margin: 15px;
+  }
+
+  .planos{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plano{
+    margin: 15px;
+  }
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+}
