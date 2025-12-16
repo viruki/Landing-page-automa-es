@@ -32,13 +32,14 @@ nav ul a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 14px;
+    padding: 7px 6px;
     transition: .3s;
 }
 
 nav ul a:hover{
     background-color: rgb(69, 141, 223);
     color: rgb(255, 255, 255);
-    padding: 7px 12px;
+    transform: scale(1.08);
     border-radius: 5px;
 }
 
@@ -160,7 +161,7 @@ nav ul a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 500px;
+    min-height: 300px;
     box-shadow: 1px 1px 15px 4px rgba(0,0,0,0.49);
     padding: 10px 15px;
     border-radius: 7px;
@@ -178,7 +179,7 @@ nav ul a:hover{
 
 .btn-buy-plan:hover{
     opacity: .8;
-    padding: 10px 17px;
+    transform: scale(1.04);
 }
 
 .contact{
