@@ -71,6 +71,10 @@ nav ul a:hover{
     transform: scale(1.05);
 }
 
+.title-fer{
+    text-align: center;
+}
+
 .ferramentas{
     display: flex;
     justify-content: center;
