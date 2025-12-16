@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,29 +34,29 @@
             <div class="fr-lateral-column">
                 <h2 class="title-fer">Ferramentas:</h2>
                 <div class="fr-linha">
-                    <div class="ferramenta">
+                    <div class="ferramenta" data-aos="fade-right">
                         <i class="fa-solid fa-robot"></i>
                         <p class="paragrafy-fer">Automações feitas com IA.</p>
                     </div>
-                    <div class="ferramenta">
+                    <div class="ferramenta" data-aos="fade-up">
                         <i class="fa-solid fa-file"></i>
                         <p class="paragrafy-fer">Upload simples e rápido.</p>
                     </div>
-                    <div class="ferramenta">
+                    <div class="ferramenta" data-aos="fade-left">
                         <i class="fa-brands fa-github"></i>
                         <p class="paragrafy-fer">Suporte para Git e Github.</p>
                     </div>
                 </div>
                 <div class="fr-linha">
-                    <div class="ferramenta">
+                    <div class="ferramenta" data-aos="fade-right">
                         <i class="fa-brands fa-discord"></i>
                         <p class="paragrafy-fer">Comunidade e conteudos exclusivos no Discord.</p>
                     </div>
-                    <div class="ferramenta">
+                    <div class="ferramenta" data-aos="fade-down">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <p class="paragrafy-fer">Checkout simples e moderno.</p>
                     </div>
-                    <div class="ferramenta">
+                    <div class="ferramenta" data-aos="fade-left">
                         <i class="fa-solid fa-lock"></i>
                         <p class="paragrafy-fer">Segurança extrema para não te prejudicar.</p>
                     </div>
@@ -71,7 +72,7 @@
             </div>
         </section>
         <section class="planos">
-            <div class="plano">
+            <div class="plano" data-aos="flip-left">
 
                 <div class="top">
                     <h2 class="title-plan">Basic Plan</h2>
@@ -82,7 +83,7 @@
                     <button class="btn-buy-plan">Comprar</button>
                 </div>
             </div>
-            <div class="plano">
+            <div class="plano" data-aos="flip-up">
                 <div class="top">
                     <h2 class="title-plan">Premium Plan</h2>
                     <h3 class="price">$49,90</h3>
@@ -92,7 +93,7 @@
                     <button class="btn-buy-plan">Comprar</button>
                 </div>
             </div>
-            <div class="plano">
+            <div class="plano" data-aos="flip-right">
                 <div class="top">
                     <h2 class="title-plan">Master Plan</h2>
                     <h3 class="price">$99,90</h3>
@@ -118,6 +119,9 @@
         </section>
     </main>
     <footer>Todos os direitos reservados.</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
